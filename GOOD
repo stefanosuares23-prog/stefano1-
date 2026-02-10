@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechSolutions Pro</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--primary:#6366f1;
+--secondary:#06b6d4;
+--dark:#0f172a;
+--card:#1e293b;
+--gray:#94a3b8;
+--success:#22c55e;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Inter;background:var(--dark);color:white}
+
+nav{
+position:fixed;top:0;width:100%;z-index:1000;
+background:rgba(15,23,42,.95);
+padding:1rem 5%;
+display:flex;justify-content:space-between;align-items:center
+}
+nav ul{display:flex;gap:20px;list-style:none}
+nav a{color:white;text-decoration:none}
+nav a:hover{color:var(--secondary)}
+
+.hero{
+height:70vh;
+background:linear-gradient(rgba(15,23,42,.8),rgba(15,23,42,.8)),
+url('https://images.unsplash.com/photo-1518770660439-4636190af475');
+background-size:cover;
+display:flex;flex-direction:column;
+align-items:center;justify-content:center;
+text-align:center
+}
+
+.container{max-width:1200px;margin:auto;padding:90px 20px}
+.title{text-align:center;color:var(--secondary);margin-bottom:40px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
+
+.card{
+background:var(--card);
+border-radius:15px;
+overflow:hidden;
+text-align:center
+}
+.card img{
+width:100%;
+height:180px;
+object-fit:cover
+}
+.card div{padding:20px}
+
+.price{
+color:var(--secondary);
+font-weight:bold;
+margin:10px 0;
+font-size:1.1rem
+}
+
+.btn{
+display:inline-block;
+margin-top:10px;
+background:var(--primary);
+color:white;
+padding:10px 15px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold
+}
+
+.whatsapp{
+position:fixed;bottom:20px;right:20px;
+background:var(--success);color:white;
+width:60px;height:60px;
+border-radius:50%;
+display:flex;align-items:center;justify-content:center;
+font-size:28px;text-decoration:none
+}
+
+input,textarea{
+width:100%;
+padding:15px;
+border:none;border-radius:8px;
+background:#334155;color:white
+}
+
+footer{
+background:#020617;
+padding:40px;
+text-align:center;color:var(--gray)
+}
+</style>
+</head>
+
+<body>
+
+<a href="https://wa.me/593991234567" class="whatsapp">📱</a>
+
+<nav>
+<div style="font-weight:bold">TECH<span style="color:var(--secondary)">PRO</span></div>
+<ul>
+<li><a href="#soporte">Soporte</a></li>
+<li><a href="#ventas">Ventas</a></li>
+<li><a href="#fundadores">Fundadores</a></li>
+<li><a href="#ubicacion">Ubicación</a></li>
+<li><a href="#contacto">Consulta</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+<h1 style="font-size:3rem">SOLUCIONES TECNOLÓGICAS</h1>
+<p style="color:var(--secondary)">HARDWARE • SOFTWARE • MANTENIMIENTO</p>
+<p style="max-width:700px;margin-top:15px;color:#cbd5f5;font-size:1.1rem;line-height:1.6">
+Brindamos soluciones integrales en soporte técnico, venta de componentes y asesoría tecnológica
+para hogares y empresas, con atención profesional y personalizada.
+</p>
+</section>
+
+<!-- SOPORTE -->
+<section class="container" id="soporte">
+<h2 class="title">Soporte Técnico</h2>
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7">
+<div>
+<h3>Mantenimiento de PC</h3>
+<p class="price">$25.00</p>
+<a href="#contacto" class="btn">Consultar</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04">
+<div>
+<h3>Reparación de Laptop</h3>
+<p class="price">$40.00</p>
+<a href="#contacto" class="btn">Consultar</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7">
+<div>
+<h3>Eliminación de Virus</h3>
+<p class="price">$20.00</p>
+<a href="#contacto" class="btn">Consultar</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1593642634367-d91a135587b5">
+<div>
+<h3>Instalación de Redes</h3>
+<p class="price">$35.00</p>
+<a href="#contacto" class="btn">Consultar</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- VENTAS -->
+<section class="container" id="ventas">
+<h2 class="title">Ventas</h2>
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1591488320449-011701bb6704">
+<div>
+<h3>Procesador Ryzen 7</h3>
+<p class="price">$280.00</p>
+<a href="#contacto" class="btn">Comprar</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7">
+<div>
+<h3>Tarjeta Gráfica RTX</h3>
+<p class="price">$750.00</p>
+<a href="#contacto" class="btn">Comprar</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1">
+<div>
+<h3>Monitor 144Hz</h3>
+<p class="price">$299.00</p>
+<a href="#contacto" class="btn">Comprar</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8">
+<div>
+<h3>Accesorios Gamer</h3>
+<p class="price">$35.00</p>
+<a href="#contacto" class="btn">Comprar</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- FUNDADORES -->
+<section class="container" id="fundadores">
+<h2 class="title">Nuestros Fundadores</h2>
+<div class="grid" style="text-align:center">
+
+<div>
+<img src="stefania.jpg" style="width:220px;height:220px;border-radius:50%">
+<h3>Stefania Pin</h3>
+<p style="color:var(--gray)">Co-Fundadora</p>
+</div>
+
+<div>
+<img src="stefano.jpg" style="width:220px;height:220px;border-radius:50%">
+<h3>Stefano Suarez</h3>
+<p style="color:var(--gray)">Co-Fundador</p>
+</div>
+
+</div>
+</section>
+
+<section class="container" id="ubicacion">
+<h2 class="title">Ubicación</h2>
+<p style="text-align:center">
+📍 Avenida Las Aguas – Guayaquil<br>
+🕘 Lunes a Sábado 09:00 – 18:30
+</p>
+</section>
+
+<section class="container" id="contacto">
+<h2 class="title">Consulta</h2>
+<form style="max-width:600px;margin:auto;display:grid;gap:15px">
+<input placeholder="Nombre" required>
+<input placeholder="WhatsApp" required>
+<input type="email" placeholder="Correo">
+<textarea rows="4" placeholder="Escribe tu consulta"></textarea>
+<button class="btn">ENVIAR</button>
+</form>
+</section>
+
+<footer>
+© 2026 TechSolutions Pro. Todos los derechos reservados.
+</footer>
+
+</body>
+</html>
